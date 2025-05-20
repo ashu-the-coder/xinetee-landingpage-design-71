@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import AnimatedSection from '@/components/AnimatedSection';
 import Button from '@/components/Button';
@@ -64,7 +65,7 @@ const Index = () => {
         
         <div className="max-w-5xl mx-auto mt-20 rounded-xl overflow-hidden shadow-2xl border border-white/10">
           <img 
-            src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=2070&auto=format&fit=crop" 
+            src="/lovable-uploads/e5e1c5b8-e79b-4f30-96b3-8c17ab6a7fc3.png" 
             alt="Xinetee Dashboard" 
             className="w-full object-cover" 
           />
