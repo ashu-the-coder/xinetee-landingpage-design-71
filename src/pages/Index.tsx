@@ -170,9 +170,9 @@ const Index = () => {
           />
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <GlassCard className="flex flex-col items-center text-center animate-float">
-              <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mb-6">
-                <Server size={32} className="text-primary" />
+            <GlassCard className="flex flex-col items-center text-center">
+              <div className="card-icon">
+                <Server size={32} />
               </div>
               <h3 className="text-xl font-medium mb-4">Virtual Machine</h3>
               <p className="text-foreground/70">
@@ -180,9 +180,9 @@ const Index = () => {
               </p>
             </GlassCard>
             
-            <GlassCard className="flex flex-col items-center text-center animate-float delay-100">
-              <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mb-6">
-                <Database size={32} className="text-primary" />
+            <GlassCard className="flex flex-col items-center text-center">
+              <div className="card-icon">
+                <Database size={32} />
               </div>
               <h3 className="text-xl font-medium mb-4">IPFS Storage</h3>
               <p className="text-foreground/70">
@@ -190,9 +190,9 @@ const Index = () => {
               </p>
             </GlassCard>
             
-            <GlassCard className="flex flex-col items-center text-center animate-float delay-200">
-              <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mb-6">
-                <Cloud size={32} className="text-primary" />
+            <GlassCard className="flex flex-col items-center text-center">
+              <div className="card-icon">
+                <Cloud size={32} />
               </div>
               <h3 className="text-xl font-medium mb-4">Blockchain Verification</h3>
               <p className="text-foreground/70">
@@ -215,9 +215,9 @@ const Index = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <GlassCard>
-              <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mb-6">
+              <div className="card-icon">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16zm-5-7h2a3 3 0 006 0h2a5 5 0 01-10 0z" fill="currentColor"/>
+                  <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16zm-5-7h2a3 3 0 006 0h2a5 5 0 01-10 0z" fill="white"/>
                 </svg>
               </div>
               <h3 className="text-xl font-medium mb-3">End-to-End Encryption</h3>
@@ -227,9 +227,9 @@ const Index = () => {
             </GlassCard>
             
             <GlassCard>
-              <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mb-6">
+              <div className="card-icon">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M17 13v1c0 2.77-.664 5.445-1.915 7.846l-.227.42-1.747-.974.227-.42C14.336 19.005 15 16.73 15 14v-1h2zm-6-3h2v4h-2v-4zm-8 8h2v3H3v-3zm4 0h2v6H7v-6zm4 0h2v4h-2v-4z" fill="currentColor"/>
+                  <path d="M17 13v1c0 2.77-.664 5.445-1.915 7.846l-.227.42-1.747-.974.227-.42C14.336 19.005 15 16.73 15 14v-1h2zm-6-3h2v4h-2v-4zm-8 8h2v3H3v-3zm4 0h2v6H7v-6zm4 0h2v4h-2v-4z" fill="white"/>
                 </svg>
               </div>
               <h3 className="text-xl font-medium mb-3">Scalable Storage</h3>
@@ -239,9 +239,9 @@ const Index = () => {
             </GlassCard>
             
             <GlassCard>
-              <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mb-6">
+              <div className="card-icon">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M7.05 13.406l3.534 3.536-1.413 1.414L3 12.186 9.172 6.02l1.414 1.414L7.05 10.972H21v2.434H7.05z" fill="currentColor"/>
+                  <path d="M7.05 13.406l3.534 3.536-1.413 1.414L3 12.186 9.172 6.02l1.414 1.414L7.05 10.972H21v2.434H7.05z" fill="white"/>
                 </svg>
               </div>
               <h3 className="text-xl font-medium mb-3">Versioning & Recovery</h3>
@@ -251,9 +251,9 @@ const Index = () => {
             </GlassCard>
             
             <GlassCard>
-              <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mb-6">
+              <div className="card-icon">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16zm-1-5h2v2h-2v-2zm0-8h2v6h-2V7z" fill="currentColor"/>
+                  <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16zm-1-5h2v2h-2v-2zm0-8h2v6h-2V7z" fill="white"/>
                 </svg>
               </div>
               <h3 className="text-xl font-medium mb-3">Global CDN Access</h3>
@@ -267,18 +267,33 @@ const Index = () => {
       
       {/* Mission Statement */}
       <AnimatedSection className="py-20 px-4 bg-gradient-to-b from-background/95 to-background">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto">
           <SectionHeading 
             title="Our Mission"
             subtitle=""
           />
-          <p className="text-xl text-foreground/80 leading-relaxed mb-10">
-            At Xinetee, we believe the future of storage is decentralized, secure, and truly owned by users. 
-            We're on a mission to free the world from centralized storage providers who control your data. 
-            Through blockchain technology, we're returning ownership to the individual while building 
-            infrastructure that's faster, more reliable, and impossible to censor.
-          </p>
-          <Button>Learn Our Story</Button>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="rounded-xl overflow-hidden aspect-video shadow-lg border border-white/10">
+              <iframe 
+                width="100%" 
+                height="100%" 
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                title="Our Mission" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen
+                className="w-full h-full"
+              ></iframe>
+            </div>
+            <div>
+              <p className="text-lg text-foreground/80 leading-relaxed mb-8">
+                At Xinetee, we believe the future of storage is decentralized, secure, and truly owned by users. 
+                We're on a mission to free the world from centralized storage providers who control your data. 
+                Through blockchain technology, we're returning ownership to the individual while building 
+                infrastructure that's faster, more reliable, and impossible to censor.
+              </p>
+              <Button>Learn Our Story</Button>
+            </div>
+          </div>
         </div>
       </AnimatedSection>
       
