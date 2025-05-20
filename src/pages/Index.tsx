@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import AnimatedSection from '@/components/AnimatedSection';
 import Button from '@/components/Button';
@@ -6,7 +5,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import SectionHeading from '@/components/SectionHeading';
 import GlassCard from '@/components/GlassCard';
-import { Check, Cloud, Database, Facebook, Instagram, Linkedin, Twitter, VirtualMachine } from 'lucide-react';
+import { Check, Cloud, Database, Facebook, Instagram, Linkedin, Twitter, Server } from 'lucide-react';
 
 const Index = () => {
   // Intersection Observer for animations
@@ -172,7 +171,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <GlassCard className="flex flex-col items-center text-center animate-float">
               <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mb-6">
-                <VirtualMachine size={32} className="text-primary" />
+                <Server size={32} className="text-primary" />
               </div>
               <h3 className="text-xl font-medium mb-4">Virtual Machine</h3>
               <p className="text-foreground/70">
@@ -217,7 +216,7 @@ const Index = () => {
             <GlassCard>
               <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mb-6">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16zm-1-5h2v2h-2v-2zm0-8h2v6h-2V7z" fill="currentColor"/>
+                  <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16zm-5-7h2a3 3 0 006 0h2a5 5 0 01-10 0z" fill="currentColor"/>
                 </svg>
               </div>
               <h3 className="text-xl font-medium mb-3">End-to-End Encryption</h3>
@@ -253,7 +252,7 @@ const Index = () => {
             <GlassCard>
               <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mb-6">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16zm-5-7h2a3 3 0 006 0h2a5 5 0 01-10 0z" fill="currentColor"/>
+                  <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16zm-1-5h2v2h-2v-2zm0-8h2v6h-2V7z" fill="currentColor"/>
                 </svg>
               </div>
               <h3 className="text-xl font-medium mb-3">Global CDN Access</h3>
