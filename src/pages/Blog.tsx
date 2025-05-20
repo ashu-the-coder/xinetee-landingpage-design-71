@@ -278,8 +278,7 @@ const blogPosts = [
       
       <p>Xinetee's API is designed to be familiar to developers who've worked with RESTful services, while incorporating the unique aspects of decentralized storage. Here's a simple example of uploading a file:</p>
       
-      <pre><code>
-const xinetee = require('xinetee-js');
+      <pre><code>const xinetee = require('xinetee-js');
 const client = new xinetee.Client({ 
   apiKey: process.env.XINETEE_API_KEY 
 });
@@ -302,8 +301,7 @@ async function uploadFile() {
     console.error('Upload failed:', error);
     throw error;
   }
-}
-      </code></pre>
+}</code></pre>
       
       <p>The <code>cid</code> (Content Identifier) returned is crucial—it's the unique fingerprint of your file and the primary way you'll reference it in future operations.</p>
       
@@ -314,31 +312,28 @@ async function uploadFile() {
       <h3>Option 1: Pointers</h3>
       <p>Maintain a mutable pointer (stored on-chain) that references the latest CID:</p>
       
-      <pre><code>
-// Update a user profile
+      <pre><code>// Update a user profile
 async function updateProfile(userId, profileData) {
   // Upload the new data, getting a new CID
   const result = await client.files.uploadJson(profileData);
   
   // Update the pointer to the new CID
   await client.pointers.set({
-    name: `user-profile-${userId}`,
+    name: \`user-profile-\${userId}\`,
     target: result.cid
   });
 }
 
 // Retrieve the latest version
 async function getProfile(userId) {
-  const pointer = await client.pointers.get(`user-profile-${userId}`);
+  const pointer = await client.pointers.get(\`user-profile-\${userId}\`);
   return client.files.getJson(pointer.target);
-}
-      </code></pre>
+}</code></pre>
       
       <h3>Option 2: CRDT-Based Data</h3>
       <p>For collaborative applications, Conflict-free Replicated Data Types provide elegant solutions:</p>
       
-      <pre><code>
-const { createYDoc, encodeYDoc, decodeYDoc } = require('xinetee-js/y-doc');
+      <pre><code>const { createYDoc, encodeYDoc, decodeYDoc } = require('xinetee-js/y-doc');
 
 async function setupCollaborativeDocument() {
   // Create initial document
@@ -355,10 +350,9 @@ async function setupCollaborativeDocument() {
   // Create a collaboration room linked to this document
   return client.collaboration.createRoom({
     documentCid: result.cid,
-    schema: 'text',
+    schema: 'text'
   });
-}
-      </code></pre>
+}</code></pre>
       
       <h2>Performance Optimization</h2>
       
@@ -367,8 +361,7 @@ async function setupCollaborativeDocument() {
       <h3>1. Chunking Strategy</h3>
       <p>Customize how files are split to optimize for your access patterns:</p>
       
-      <pre><code>
-// For a video file where random access is important
+      <pre><code>// For a video file where random access is important
 const options = {
   chunker: {
     algorithm: 'fixed',
@@ -382,8 +375,7 @@ const options = {
     algorithm: 'buzhash',
     averageSize: 1024 * 1024 // ~1MB average chunks
   }
-};
-      </code></pre>
+};</code></pre>
       
       <h3>2. Strategic Caching</h3>
       <p>Implement caching at various levels:</p>
@@ -397,21 +389,18 @@ const options = {
       <h3>3. Progressive Loading</h3>
       <p>For large media, implement progressive loading:</p>
       
-      <pre><code>
-// Request only the needed chunks
+      <pre><code>// Request only the needed chunks
 const videoStream = await client.files.readStream(videoCid, {
   start: timeOffset * bytesPerSecond,
   end: (timeOffset + duration) * bytesPerSecond
-});
-      </code></pre>
+});</code></pre>
       
       <h2>Security Best Practices</h2>
       
       <h3>1. Key Management</h3>
       <p>Never hardcode encryption or access keys. Use key derivation for user-specific keys:</p>
       
-      <pre><code>
-const userKey = await client.crypto.deriveKey({
+      <pre><code>const userKey = await client.crypto.deriveKey({
   password: userPassword,
   salt: username,
   iterations: 100000,
@@ -424,42 +413,36 @@ const result = await client.files.upload(fileStream, {
     type: 'aes-gcm',
     key: userKey
   }
-});
-      </code></pre>
+});</code></pre>
       
       <h3>2. Access Control</h3>
       <p>Implement principle of least privilege with granular permissions:</p>
       
-      <pre><code>
-await client.access.grant({
+      <pre><code>await client.access.grant({
   target: documentCid,
   identity: collaboratorId,
   permissions: ['read', 'comment'],  // But not 'write'
   expires: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000) // 30 days
-});
-      </code></pre>
+});</code></pre>
       
       <h2>Common Integration Challenges</h2>
       
       <h3>Challenge: Handling Network Variability</h3>
       <p>Decentralized systems have different latency characteristics:</p>
       
-      <pre><code>
-const result = await client.files.upload(largeFile, {
+      <pre><code>const result = await client.files.upload(largeFile, {
   onProgress: (progress) => {
-    console.log(`Uploaded ${progress.percent}%`);
+    console.log(\`Uploaded \${progress.percent}%\`);
     updateProgressUI(progress.percent);
   },
   retries: 3,
   concurrency: 5
-});
-      </code></pre>
+});</code></pre>
       
       <h3>Challenge: Offline Support</h3>
       <p>Implement offline-first capabilities:</p>
       
-      <pre><code>
-// In your service worker
+      <pre><code>// In your service worker
 import { createXineteeCache } from 'xinetee-js/sw';
 
 const xineteeCache = createXineteeCache({
@@ -470,8 +453,7 @@ const xineteeCache = createXineteeCache({
 // Then in your application
 const doc = await client.files.get(docCid, {
   offlineFirst: true  // Try cache before network
-});
-      </code></pre>
+});</code></pre>
       
       <h2>Testing and Deployment</h2>
       
@@ -485,13 +467,11 @@ const doc = await client.files.get(docCid, {
       
       <p>For CI/CD pipelines, use our Docker containers:</p>
       
-      <pre><code>
-# In your CI/CD pipeline
-docker run --rm -v $(pwd):/app xinetee/cli:latest \
-  --token $CI_TOKEN \
-  --env staging \
-  deploy --directory ./build
-      </code></pre>
+      <pre><code># In your CI/CD pipeline
+docker run --rm -v $(pwd):/app xinetee/cli:latest \\
+  --token $CI_TOKEN \\
+  --env staging \\
+  deploy --directory ./build</code></pre>
       
       <h2>Conclusion</h2>
       
