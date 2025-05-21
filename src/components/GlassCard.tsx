@@ -19,7 +19,8 @@ const GlassCard = ({ children, className }: GlassCardProps) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       style={{
-        boxShadow: isHovered ? '0 0 20px rgba(130, 91, 220, 0.4)' : ''
+        boxShadow: isHovered ? '0 0 20px rgba(130, 91, 220, 0.4)' : '',
+        backgroundColor: 'rgba(40, 30, 60, 0.6)'  // Brighter background for cards
       }}
     >
       {children}

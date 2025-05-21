@@ -19,14 +19,13 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // List of navigation links
+  // Updated list of navigation links
   const navLinks = [
-    { name: 'Home', href: '#hero' },
-    { name: 'Features', href: '#features' },
-    { name: 'Security', href: '#security' },
-    { name: 'Testimonials', href: '#testimonials' },
-    { name: 'Pricing', href: '#pricing' },
-    { name: 'FAQ', href: '#faq' },
+    { name: 'Home', href: '/#hero' },
+    { name: 'Features', href: '/features' },
+    { name: 'About', href: '/about' },
+    { name: 'Blog', href: '/blog' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   return (
