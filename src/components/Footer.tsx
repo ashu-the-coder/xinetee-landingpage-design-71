@@ -1,11 +1,16 @@
-
 import { Facebook, Twitter, Instagram, Linkedin, Cloud } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="bg-background pt-16 pb-8 border-t border-white/5">
+    <footer className="bg-background pt-16 pb-8 border-t border-white/5 relative">
+      {/* Add enhanced background glow to footer */}
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+        <div className="absolute bottom-0 left-1/4 w-[700px] h-[700px] bg-purple-600/10 rounded-full blur-[150px]"></div>
+        <div className="absolute top-1/2 right-1/4 w-[500px] h-[500px] bg-pink-500/10 rounded-full blur-[120px]"></div>
+      </div>
+      
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
@@ -15,7 +20,7 @@ const Footer = () => {
                 alt="Xinetee Logo" 
                 className="h-10 w-10 mr-2"
               />
-              <span className="font-medium text-xl">Xinetee</span>
+              <span className="font-bold text-xl uppercase">XINETEE</span>
             </div>
             <p className="text-sm mb-6 text-foreground/70">
               Secure, decentralized storage powered by blockchain technology. Your data, truly yours.
@@ -88,7 +93,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-white/5 pt-8 text-center text-sm text-foreground/60">
-          <p>&copy; {currentYear} Xinetee. All rights reserved.</p>
+          <p>&copy; {currentYear} XINETEE. All rights reserved.</p>
           <div className="flex items-center justify-center mt-4">
             <Cloud size={16} className="mr-2" />
             <p>Decentralized Storage Powered By Blockchain</p>

@@ -36,14 +36,14 @@ const Navbar = () => {
         }`}
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          {/* Logo */}
+          {/* Logo with XINETEE in all caps */}
           <div className="flex items-center">
             <img 
               src="/lovable-uploads/97547526-cf03-4ab6-867c-d4d5756b99f0.png" 
               alt="Xinetee Logo" 
               className="h-10 w-10 mr-2"
             />
-            <span className="font-medium text-xl">Xinetee</span>
+            <span className="font-bold text-xl uppercase">XINETEE</span>
           </div>
           
           {/* Desktop Navigation */}

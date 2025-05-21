@@ -16,8 +16,15 @@ const About = () => {
       {/* Hero */}
       <AnimatedSection className="pt-32 pb-20 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-radial from-primary/20 to-transparent opacity-30"></div>
+        {/* Enhanced background glow effects */}
+        <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
+          <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-purple-600/20 rounded-full blur-[100px]"></div>
+          <div className="absolute bottom-1/4 right-1/3 w-[600px] h-[600px] bg-pink-600/10 rounded-full blur-[120px]"></div>
+          <div className="absolute top-1/2 right-1/4 w-[400px] h-[400px] bg-purple-500/15 rounded-full blur-[80px]"></div>
+        </div>
+        
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h1 className="text-4xl md:text-6xl mb-6 font-semibold tracking-tight">
+          <h1 className="text-4xl md:text-6xl mb-6 font-bold tracking-tight">
             Our <span className="text-primary">Story</span>
           </h1>
           <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
@@ -31,7 +38,7 @@ const About = () => {
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-24">
             <div>
-              <h2 className="text-3xl font-semibold mb-6">How It All Began</h2>
+              <h2 className="text-3xl font-bold mb-6">How It All Began</h2>
               <p className="text-foreground/80 mb-4">
                 Xinetee was founded in 2020 by a team of cryptographers, blockchain engineers, and privacy advocates 
                 who shared a vision: to create storage infrastructure that users could truly own.
@@ -51,12 +58,31 @@ const About = () => {
             </GlassCard>
           </div>
           
-          {/* Mission Video Section */}
-          <VideoSection 
-            title="Our Mission"
-            description="We believe that data storage should be more than just a service—it should be a right. A right to privacy, security, and true ownership of your digital information. Our mission is to build technology that puts users first, eliminates central points of failure, and makes unprecedented security accessible to everyone."
-            videoSrc="https://xinetee.network/videos/demo.mp4"
-          />
+          {/* Updated Mission Video Section with the provided YouTube link */}
+          <div className="mb-24">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+              <div>
+                <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
+                <p className="text-foreground/80 mb-4">
+                  We believe that data storage should be more than just a service—it should be a right. A right to privacy, security, and true ownership of your digital information.
+                </p>
+                <p className="text-foreground/80">
+                  Our mission is to build technology that puts users first, eliminates central points of failure, and makes unprecedented security accessible to everyone.
+                </p>
+              </div>
+              <GlassCard className="p-0 overflow-hidden aspect-video">
+                <iframe 
+                  width="100%" 
+                  height="100%" 
+                  src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                  title="Our Mission" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowFullScreen
+                  className="w-full h-full"
+                ></iframe>
+              </GlassCard>
+            </div>
+          </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-24 mt-12">
             <GlassCard className="p-6 md:p-10 h-80 flex items-center justify-center bg-card/20 md:order-1 lg:order-1">
@@ -67,7 +93,7 @@ const About = () => {
               />
             </GlassCard>
             <div className="md:order-2 lg:order-2">
-              <h2 className="text-3xl font-semibold mb-6">Our Vision</h2>
+              <h2 className="text-3xl font-bold mb-6">Our Vision</h2>
               <p className="text-foreground/80 mb-4">
                 We envision a world where individuals and organizations no longer have to choose between convenience and control.
               </p>
@@ -80,7 +106,7 @@ const About = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl font-semibold mb-6">The Technology</h2>
+              <h2 className="text-3xl font-bold mb-6">The Technology</h2>
               <p className="text-foreground/80 mb-4">
                 Xinetee combines three powerful technologies—virtual machines for secure computation, IPFS for distributed 
                 storage, and blockchain for verification—into a seamless platform that redefines what's possible in data storage.
@@ -103,7 +129,13 @@ const About = () => {
       </AnimatedSection>
       
       {/* Team Section */}
-      <AnimatedSection className="py-16 px-4 bg-gradient-to-b from-background to-background/95">
+      <AnimatedSection className="py-16 px-4 bg-gradient-to-b from-background to-background/95 relative">
+        {/* Enhanced background glow effects */}
+        <div className="absolute inset-0 -z-10 overflow-hidden">
+          <div className="absolute top-1/3 left-1/5 w-[700px] h-[700px] bg-purple-600/15 rounded-full blur-[150px]"></div>
+          <div className="absolute bottom-1/4 right-1/5 w-[500px] h-[500px] bg-pink-600/10 rounded-full blur-[100px]"></div>
+        </div>
+        
         <div className="max-w-6xl mx-auto">
           <SectionHeading
             title="Our Team"
@@ -195,7 +227,13 @@ const About = () => {
       </AnimatedSection>
       
       {/* Values */}
-      <AnimatedSection className="py-16 px-4">
+      <AnimatedSection className="py-16 px-4 relative">
+        {/* Enhanced background glow effects */}
+        <div className="absolute inset-0 -z-10 overflow-hidden">
+          <div className="absolute top-1/4 right-1/3 w-[600px] h-[600px] bg-purple-500/15 rounded-full blur-[120px]"></div>
+          <div className="absolute bottom-1/3 left-1/4 w-[500px] h-[500px] bg-pink-500/10 rounded-full blur-[100px]"></div>
+        </div>
+        
         <div className="max-w-6xl mx-auto">
           <SectionHeading
             title="Our Values"
@@ -241,7 +279,7 @@ const About = () => {
       {/* CTA */}
       <AnimatedSection className="py-20 px-4 bg-gradient-to-b from-background/95 to-background">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl mb-6 font-semibold tracking-tight">
+          <h2 className="text-3xl md:text-4xl mb-6 font-bold tracking-tight">
             Join Us on Our Mission
           </h2>
           <p className="text-xl text-foreground/70 mb-10">
