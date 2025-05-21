@@ -6,7 +6,10 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import SectionHeading from '@/components/SectionHeading';
 import GlassCard from '@/components/GlassCard';
-import { Check, Cloud, Database, Facebook, Instagram, Linkedin, Twitter, Server } from 'lucide-react';
+import TestimonialCarousel from '@/components/TestimonialCarousel';
+import SocialMediaSection from '@/components/SocialMediaSection';
+import Globe3D from '@/components/Globe3D';
+import { Check, Cloud, Database, Server } from 'lucide-react';
 
 const Index = () => {
   // Intersection Observer for animations
@@ -49,6 +52,9 @@ const Index = () => {
         <div className="absolute top-20 left-[20%] w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-[20%] w-64 h-64 bg-secondary/20 rounded-full blur-3xl"></div>
         
+        {/* 3D Globe */}
+        <Globe3D />
+        
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <h1 className="text-4xl md:text-6xl lg:text-7xl mb-6 font-light tracking-tight">
             Secure, Decentralized <span className="text-primary">Storage</span> On The Blockchain
@@ -57,13 +63,13 @@ const Index = () => {
             Experience next-generation file storage with unbreakable security, powered by blockchain technology.
             Your data, truly yours—forever.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 relative z-10">
             <Button size="lg">Get Started</Button>
             <Button variant="outline" size="lg">Learn More</Button>
           </div>
         </div>
         
-        <div className="max-w-5xl mx-auto mt-20 rounded-xl overflow-hidden shadow-2xl border border-white/10">
+        <div className="max-w-5xl mx-auto mt-20 rounded-xl overflow-hidden shadow-2xl border border-white/10 relative z-10">
           <img 
             src="/lovable-uploads/e5e1c5b8-e79b-4f30-96b3-8c17ab6a7fc3.png" 
             alt="Xinetee Dashboard" 
@@ -73,29 +79,7 @@ const Index = () => {
       </AnimatedSection>
       
       {/* Social Media Section */}
-      <AnimatedSection className="py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <p className="text-center mb-10 font-light text-foreground/70">Trusted by users across leading platforms</p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-10 items-center justify-items-center">
-            <div className="text-foreground/60 hover:text-foreground transition-all duration-300 flex flex-col items-center">
-              <Facebook size={32} />
-              <span className="mt-2 text-sm">Facebook</span>
-            </div>
-            <div className="text-foreground/60 hover:text-foreground transition-all duration-300 flex flex-col items-center">
-              <Twitter size={32} />
-              <span className="mt-2 text-sm">Twitter</span>
-            </div>
-            <div className="text-foreground/60 hover:text-foreground transition-all duration-300 flex flex-col items-center">
-              <Instagram size={32} />
-              <span className="mt-2 text-sm">Instagram</span>
-            </div>
-            <div className="text-foreground/60 hover:text-foreground transition-all duration-300 flex flex-col items-center">
-              <Linkedin size={32} />
-              <span className="mt-2 text-sm">LinkedIn</span>
-            </div>
-          </div>
-        </div>
-      </AnimatedSection>
+      <SocialMediaSection />
       
       {/* Testimonials Section */}
       <AnimatedSection id="testimonials" className="py-20 px-4">
@@ -105,59 +89,7 @@ const Index = () => {
             subtitle="Find out how Xinetee is transforming data storage for professionals around the world."
           />
           
-          <div className="relative">
-            <div className="overflow-hidden">
-              <div className="flex space-x-6 py-8 animate-[scroll_60s_linear_infinite]">
-                {/* Testimonial cards - These would typically be in a carousel */}
-                {[
-                  {
-                    name: "Sarah Johnson",
-                    role: "CTO, TechVision",
-                    quote: "Xinetee revolutionized our data storage strategy. The blockchain security and decentralized approach give us peace of mind we never had before.",
-                    result: "99.9% uptime with zero data breaches"
-                  },
-                  {
-                    name: "Michael Chen",
-                    role: "Lead Developer, StartupX",
-                    quote: "The API is a dream to work with. We integrated our entire system with Xinetee in just two days, and throughput improved by 40%.",
-                    result: "Reduced storage costs by 35%"
-                  },
-                  {
-                    name: "Elena Rodriguez",
-                    role: "Data Security Officer, EnterpriseY",
-                    quote: "After multiple security audits, Xinetee stands as the most robust storage solution we've evaluated. The 3-layer security model is exceptional.",
-                    result: "Passed all compliance requirements with no issues"
-                  }
-                ].map((testimonial, i) => (
-                  <GlassCard key={i} className="min-w-[300px] md:min-w-[400px] flex-shrink-0">
-                    <div className="flex flex-col h-full">
-                      <div className="mb-6">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.33333 21.3333H14.6667V16H10.6667C10.6667 13.6 12.6667 11.6 15.0667 11.6V6.66667C9.33333 6.66667 4.66667 11.3333 4.66667 17.0667V26.6667H14.6667V21.3333H9.33333ZM24 11.6V6.66667C18.2667 6.66667 13.6 11.3333 13.6 17.0667V26.6667H23.6V16H18.6667V21.3333H18.3333V17.0667C18.3333 14.6667 20.3333 12.6667 22.7333 12.6667H24V11.6Z" fill="currentColor" fillOpacity="0.8"/>
-                        </svg>
-                      </div>
-                      <p className="text-foreground/80 mb-6">{testimonial.quote}</p>
-                      <div className="mt-auto">
-                        <div className="mb-2">
-                          <span className="text-primary font-medium">Result: </span>
-                          <span className="text-foreground/70">{testimonial.result}</span>
-                        </div>
-                        <div className="flex items-center">
-                          <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center mr-3">
-                            {testimonial.name.charAt(0)}
-                          </div>
-                          <div>
-                            <p className="font-medium">{testimonial.name}</p>
-                            <p className="text-sm text-foreground/60">{testimonial.role}</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </GlassCard>
-                ))}
-              </div>
-            </div>
-          </div>
+          <TestimonialCarousel />
         </div>
       </AnimatedSection>
       

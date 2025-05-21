@@ -10,23 +10,27 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <div className="flex items-center mb-6">
-              <div className="h-10 w-10 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-xl mr-2">X</div>
+              <img 
+                src="/lovable-uploads/97547526-cf03-4ab6-867c-d4d5756b99f0.png" 
+                alt="Xinetee Logo" 
+                className="h-10 w-10 mr-2"
+              />
               <span className="font-medium text-xl">Xinetee</span>
             </div>
             <p className="text-sm mb-6 text-foreground/70">
               Secure, decentralized storage powered by blockchain technology. Your data, truly yours.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-foreground/60 hover:text-foreground transition-colors">
+              <a href="#" className="social-icon text-foreground/60 hover:text-foreground transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-foreground/60 hover:text-foreground transition-colors">
+              <a href="#" className="social-icon text-foreground/60 hover:text-foreground transition-colors">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="text-foreground/60 hover:text-foreground transition-colors">
+              <a href="#" className="social-icon text-foreground/60 hover:text-foreground transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="text-foreground/60 hover:text-foreground transition-colors">
+              <a href="#" className="social-icon text-foreground/60 hover:text-foreground transition-colors">
                 <Linkedin size={20} />
               </a>
             </div>
