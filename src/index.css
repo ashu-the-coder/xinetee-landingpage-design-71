@@ -60,7 +60,7 @@
     background: linear-gradient(135deg, hsl(267 30% 5%), hsl(267 30% 8%));
   }
   
-  /* Enhanced purple glow effect for the background with a mesh gradient - MORE INTENSE PURPLE GLOW */
+  /* Enhanced purple glow effect for the background with a mesh gradient - MORE INTENSE & VIBRANT GLOW */
   body::before {
     content: '';
     position: fixed;
@@ -69,11 +69,13 @@
     width: 100%;
     height: 100%;
     background: 
-      radial-gradient(circle at 20% 20%, rgba(126, 87, 194, 0.3) 0%, transparent 50%),
-      radial-gradient(circle at 80% 80%, rgba(126, 87, 194, 0.25) 0%, transparent 60%),
-      radial-gradient(circle at 50% 50%, rgba(126, 87, 194, 0.2) 0%, transparent 70%),
-      radial-gradient(ellipse at bottom, rgba(126, 87, 194, 0.3) 0%, transparent 70%),
-      radial-gradient(ellipse at top, rgba(170, 120, 220, 0.2) 0%, transparent 70%);
+      radial-gradient(circle at 20% 20%, rgba(140, 87, 220, 0.4) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(126, 87, 194, 0.35) 0%, transparent 60%),
+      radial-gradient(circle at 50% 50%, rgba(200, 120, 255, 0.25) 0%, transparent 70%),
+      radial-gradient(ellipse at bottom, rgba(160, 100, 240, 0.4) 0%, transparent 70%),
+      radial-gradient(ellipse at top, rgba(210, 140, 255, 0.3) 0%, transparent 70%),
+      radial-gradient(ellipse at left, rgba(180, 90, 255, 0.25) 0%, transparent 60%),
+      radial-gradient(ellipse at right, rgba(220, 130, 255, 0.25) 0%, transparent 60%);
     pointer-events: none;
     z-index: -1;
   }
@@ -95,7 +97,7 @@
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply tracking-tight font-light;
+    @apply tracking-tight font-medium;
   }
   
   p {
@@ -105,9 +107,9 @@
 
 @layer components {
   .neo-button {
-    @apply relative bg-gradient-to-b from-primary/20 to-primary/5
+    @apply relative bg-gradient-to-b from-primary/30 to-primary/10
            text-foreground py-3 px-6 rounded-xl 
-           shadow-[0_6px_15px_rgba(0,0,0,0.3),inset_0_1px_1px_rgba(255,255,255,0.1)]
+           shadow-[0_6px_15px_rgba(0,0,0,0.3),inset_0_1px_1px_rgba(255,255,255,0.15)]
            transition-all duration-300 ease-out
            overflow-hidden;
   }
@@ -115,7 +117,7 @@
   .neo-button::before {
     @apply content-[''] absolute inset-0 rounded-xl 
            opacity-0 transition-opacity duration-300 ease-out;
-    background: radial-gradient(circle at center, rgba(130, 91, 220, 0.6) 0%, rgba(130, 91, 220, 0) 70%);
+    background: radial-gradient(circle at center, rgba(150, 100, 240, 0.7) 0%, rgba(150, 100, 240, 0) 70%);
   }
   
   .neo-button:hover {
@@ -137,25 +139,25 @@
            transition-transform duration-300 ease-out;
   }
   
-  /* Enhanced hover animation for glass cards - BRIGHTER CARDS */
+  /* Enhanced hover animation for glass cards - BRIGHTER CARDS with MORE GLOW */
   .glass-card:hover {
     @apply transform scale-105 shadow-xl border-white/20;
-    box-shadow: 0 0 20px rgba(130, 91, 220, 0.4);
+    box-shadow: 0 0 25px rgba(170, 110, 240, 0.5);
   }
 
-  /* Social media icon animations with glow effect */
+  /* Social media icon animations with enhanced glow effect */
   .social-icon {
     @apply transition-all duration-300 ease-out;
   }
   
   .social-icon:hover {
     @apply transform scale-110;
-    filter: drop-shadow(0 0 10px rgba(170, 120, 250, 0.9));
+    filter: drop-shadow(0 0 14px rgba(190, 130, 255, 0.95));
   }
 
   .card-icon {
-    @apply w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6
-           shadow-[0_0_15px_rgba(130,91,220,0.3)] border border-white/10;
+    @apply w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mb-6
+           shadow-[0_0_15px_rgba(150,100,240,0.4)] border border-white/10;
   }
   
   .card-icon svg {
@@ -164,7 +166,7 @@
   
   /* Enhanced card icon style */
   .card-icon {
-    @apply bg-gradient-to-br from-purple-500/20 to-purple-700/10;
+    @apply bg-gradient-to-br from-purple-500/30 to-purple-700/15;
   }
   
   .animate-on-scroll {
@@ -181,12 +183,47 @@
   }
   
   .testimonial-card:hover {
-    box-shadow: 0 0 25px rgba(130, 91, 220, 0.5);
-    @apply border-purple-500/30;
+    box-shadow: 0 0 30px rgba(170, 110, 240, 0.6);
+    @apply border-purple-500/40;
   }
   
   /* Globe container styles - ADJUSTED POSITIONING */
   .globe-container {
-    @apply absolute z-0 w-full h-[500px] top-[150px] opacity-80 pointer-events-none;
+    @apply absolute z-0 w-full h-[500px] top-[180px] opacity-80 pointer-events-none;
+  }
+  
+  /* Add abstract glow behind cards */
+  .glass-card {
+    position: relative;
+  }
+  
+  .glass-card::before {
+    content: '';
+    position: absolute;
+    inset: -15px -15px -15px -15px;
+    border-radius: inherit;
+    background: radial-gradient(circle at center, rgba(170, 110, 240, 0.15), transparent 70%);
+    z-index: -1;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+  }
+  
+  .glass-card:hover::before {
+    opacity: 1;
+  }
+
+  /* Team member social icons */
+  .team-social-icons {
+    @apply flex justify-center gap-4 mt-4;
+  }
+  
+  .team-social-icon {
+    @apply text-foreground/60 hover:text-foreground transition-all duration-300;
+    filter: drop-shadow(0 0 5px rgba(190, 130, 255, 0.3));
+  }
+  
+  .team-social-icon:hover {
+    @apply transform scale-110;
+    filter: drop-shadow(0 0 12px rgba(190, 130, 255, 0.8));
   }
 }

@@ -21,16 +21,36 @@ const Footer = () => {
               Secure, decentralized storage powered by blockchain technology. Your data, truly yours.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="social-icon text-foreground/60 hover:text-foreground transition-colors">
+              <a 
+                href="https://www.linkedin.com/company/xinetee/posts/?feedView=all" 
+                className="social-icon text-foreground/60 hover:text-foreground transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Facebook size={20} />
               </a>
-              <a href="#" className="social-icon text-foreground/60 hover:text-foreground transition-colors">
+              <a 
+                href="https://x.com/Xinetee_Network" 
+                className="social-icon text-foreground/60 hover:text-foreground transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Twitter size={20} />
               </a>
-              <a href="#" className="social-icon text-foreground/60 hover:text-foreground transition-colors">
+              <a 
+                href="https://www.linkedin.com/company/xinetee/posts/?feedView=all" 
+                className="social-icon text-foreground/60 hover:text-foreground transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Instagram size={20} />
               </a>
-              <a href="#" className="social-icon text-foreground/60 hover:text-foreground transition-colors">
+              <a 
+                href="https://www.linkedin.com/company/xinetee/posts/?feedView=all" 
+                className="social-icon text-foreground/60 hover:text-foreground transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Linkedin size={20} />
               </a>
             </div>

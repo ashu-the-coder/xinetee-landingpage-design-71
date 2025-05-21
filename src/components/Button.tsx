@@ -22,7 +22,7 @@ const Button = ({
         size === 'sm' && 'text-sm py-2 px-4',
         size === 'md' && 'text-base py-3 px-6',
         size === 'lg' && 'text-lg py-4 px-8',
-        variant === 'secondary' && 'bg-gradient-to-b from-secondary/20 to-secondary/5',
+        variant === 'secondary' && 'bg-gradient-to-b from-secondary/30 to-secondary/10',
         variant === 'outline' && 'bg-transparent border border-primary/50 hover:bg-primary/5',
         className
       )}

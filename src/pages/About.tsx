@@ -5,6 +5,7 @@ import AnimatedSection from '@/components/AnimatedSection';
 import SectionHeading from '@/components/SectionHeading';
 import GlassCard from '@/components/GlassCard';
 import Button from '@/components/Button';
+import { Linkedin, Twitter, Instagram } from 'lucide-react';
 
 const About = () => {
   return (
@@ -15,7 +16,7 @@ const About = () => {
       <AnimatedSection className="pt-32 pb-20 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-radial from-primary/20 to-transparent opacity-30"></div>
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h1 className="text-4xl md:text-6xl mb-6 font-light tracking-tight">
+          <h1 className="text-4xl md:text-6xl mb-6 font-medium tracking-tight">
             Our <span className="text-primary">Story</span>
           </h1>
           <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
@@ -29,7 +30,7 @@ const About = () => {
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-24">
             <div>
-              <h2 className="text-3xl font-light mb-6">How It All Began</h2>
+              <h2 className="text-3xl font-medium mb-6">How It All Began</h2>
               <p className="text-foreground/80 mb-4">
                 Xinetee was founded in 2020 by a team of cryptographers, blockchain engineers, and privacy advocates 
                 who shared a vision: to create storage infrastructure that users could truly own.
@@ -58,7 +59,7 @@ const About = () => {
               />
             </GlassCard>
             <div className="md:order-2 lg:order-2">
-              <h2 className="text-3xl font-light mb-6">Our Mission</h2>
+              <h2 className="text-3xl font-medium mb-6">Our Mission</h2>
               <p className="text-foreground/80 mb-4">
                 We believe that data storage should be more than just a service—it should be a right. A right to privacy, 
                 security, and true ownership of your digital information.
@@ -73,7 +74,7 @@ const About = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl font-light mb-6">The Technology</h2>
+              <h2 className="text-3xl font-medium mb-6">The Technology</h2>
               <p className="text-foreground/80 mb-4">
                 Xinetee combines three powerful technologies—virtual machines for secure computation, IPFS for distributed 
                 storage, and blockchain for verification—into a seamless platform that redefines what's possible in data storage.
@@ -153,6 +154,34 @@ const About = () => {
                 <h3 className="text-xl font-medium mb-1">{member.name}</h3>
                 <p className="text-primary text-sm mb-4">{member.role}</p>
                 <p className="text-foreground/70">{member.bio}</p>
+                
+                {/* Social Media Icons */}
+                <div className="team-social-icons mt-auto pt-4">
+                  <a 
+                    href="https://www.linkedin.com/company/xinetee/posts/?feedView=all"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="team-social-icon"
+                  >
+                    <Linkedin size={20} />
+                  </a>
+                  <a 
+                    href="https://x.com/Xinetee_Network"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="team-social-icon"
+                  >
+                    <Twitter size={20} />
+                  </a>
+                  <a 
+                    href="https://www.linkedin.com/company/xinetee/posts/?feedView=all"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="team-social-icon"
+                  >
+                    <Instagram size={20} />
+                  </a>
+                </div>
               </GlassCard>
             ))}
           </div>
@@ -206,7 +235,7 @@ const About = () => {
       {/* CTA */}
       <AnimatedSection className="py-20 px-4 bg-gradient-to-b from-background/95 to-background">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl mb-6 font-light tracking-tight">
+          <h2 className="text-3xl md:text-4xl mb-6 font-medium tracking-tight">
             Join Us on Our Mission
           </h2>
           <p className="text-xl text-foreground/70 mb-10">
