@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import AnimatedSection from '@/components/AnimatedSection';
 import Button from '@/components/Button';
@@ -48,20 +49,15 @@ const Index = () => {
         className="pt-32 pb-20 md:pt-40 md:pb-32 px-4 relative overflow-hidden"
       >
         <div className="absolute inset-0 bg-gradient-radial from-primary/20 to-transparent opacity-30"></div>
+        <div className="absolute top-20 left-[20%] w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-[20%] w-64 h-64 bg-secondary/20 rounded-full blur-3xl"></div>
         
-        {/* Enhanced background glow effects */}
-        <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
-          <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-purple-600/20 rounded-full blur-[120px]"></div>
-          <div className="absolute bottom-1/4 right-1/3 w-[700px] h-[700px] bg-pink-600/15 rounded-full blur-[140px]"></div>
-          <div className="absolute top-1/2 right-1/4 w-[500px] h-[500px] bg-purple-500/15 rounded-full blur-[100px]"></div>
-        </div>
-        
-        {/* 3D Globe with enhanced glow effect */}
+        {/* 3D Globe */}
         <Globe3D />
         
         <div className="max-w-5xl mx-auto text-center relative z-10">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl mb-6 font-bold tracking-tight">
-            Secure. Decentralized. <span className="text-primary">Innovate.</span>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl mb-6 font-light tracking-tight">
+            Secure, Decentralized <span className="text-primary">Storage</span> On The Blockchain
           </h1>
           <p className="text-xl text-foreground/70 max-w-2xl mx-auto mb-12">
             Experience next-generation file storage with unbreakable security, powered by blockchain technology.
@@ -74,8 +70,6 @@ const Index = () => {
         </div>
         
         <div className="max-w-5xl mx-auto mt-20 rounded-xl overflow-hidden shadow-2xl border border-white/10 relative z-10">
-          {/* Add subtle glow behind dashboard image */}
-          <div className="absolute inset-0 -z-10 bg-gradient-radial from-purple-500/30 via-pink-500/20 to-transparent opacity-70 blur-3xl"></div>
           <img 
             src="/lovable-uploads/e5e1c5b8-e79b-4f30-96b3-8c17ab6a7fc3.png" 
             alt="Xinetee Dashboard" 
