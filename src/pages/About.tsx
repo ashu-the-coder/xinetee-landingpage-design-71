@@ -5,6 +5,7 @@ import AnimatedSection from '@/components/AnimatedSection';
 import SectionHeading from '@/components/SectionHeading';
 import GlassCard from '@/components/GlassCard';
 import Button from '@/components/Button';
+import VideoSection from '@/components/VideoSection';
 import { Linkedin, Twitter, Instagram } from 'lucide-react';
 
 const About = () => {
@@ -16,7 +17,7 @@ const About = () => {
       <AnimatedSection className="pt-32 pb-20 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-radial from-primary/20 to-transparent opacity-30"></div>
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h1 className="text-4xl md:text-6xl mb-6 font-medium tracking-tight">
+          <h1 className="text-4xl md:text-6xl mb-6 font-semibold tracking-tight">
             Our <span className="text-primary">Story</span>
           </h1>
           <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
@@ -30,7 +31,7 @@ const About = () => {
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-24">
             <div>
-              <h2 className="text-3xl font-medium mb-6">How It All Began</h2>
+              <h2 className="text-3xl font-semibold mb-6">How It All Began</h2>
               <p className="text-foreground/80 mb-4">
                 Xinetee was founded in 2020 by a team of cryptographers, blockchain engineers, and privacy advocates 
                 who shared a vision: to create storage infrastructure that users could truly own.
@@ -50,7 +51,14 @@ const About = () => {
             </GlassCard>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-24">
+          {/* Mission Video Section */}
+          <VideoSection 
+            title="Our Mission"
+            description="We believe that data storage should be more than just a service—it should be a right. A right to privacy, security, and true ownership of your digital information. Our mission is to build technology that puts users first, eliminates central points of failure, and makes unprecedented security accessible to everyone."
+            videoSrc="https://xinetee.network/videos/demo.mp4"
+          />
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-24 mt-12">
             <GlassCard className="p-6 md:p-10 h-80 flex items-center justify-center bg-card/20 md:order-1 lg:order-1">
               <img 
                 src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1472&auto=format&fit=crop" 
@@ -59,22 +67,20 @@ const About = () => {
               />
             </GlassCard>
             <div className="md:order-2 lg:order-2">
-              <h2 className="text-3xl font-medium mb-6">Our Mission</h2>
+              <h2 className="text-3xl font-semibold mb-6">Our Vision</h2>
               <p className="text-foreground/80 mb-4">
-                We believe that data storage should be more than just a service—it should be a right. A right to privacy, 
-                security, and true ownership of your digital information.
+                We envision a world where individuals and organizations no longer have to choose between convenience and control.
               </p>
               <p className="text-foreground/80">
-                Our mission is to build technology that puts users first, eliminates central points of failure, 
-                and makes unprecedented security accessible to everyone. We envision a world where individuals 
-                and organizations no longer have to choose between convenience and control.
+                Through innovative technology and a commitment to user sovereignty, we're creating a future where data is 
+                always accessible, never compromised, and truly owned by those who create it.
               </p>
             </div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl font-medium mb-6">The Technology</h2>
+              <h2 className="text-3xl font-semibold mb-6">The Technology</h2>
               <p className="text-foreground/80 mb-4">
                 Xinetee combines three powerful technologies—virtual machines for secure computation, IPFS for distributed 
                 storage, and blockchain for verification—into a seamless platform that redefines what's possible in data storage.
@@ -151,12 +157,12 @@ const About = () => {
                     className="w-full h-full object-cover" 
                   />
                 </div>
-                <h3 className="text-xl font-medium mb-1">{member.name}</h3>
+                <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
                 <p className="text-primary text-sm mb-4">{member.role}</p>
-                <p className="text-foreground/70">{member.bio}</p>
+                <p className="text-foreground/70 mb-6">{member.bio}</p>
                 
                 {/* Social Media Icons */}
-                <div className="team-social-icons mt-auto pt-4">
+                <div className="team-social-icons mt-auto">
                   <a 
                     href="https://www.linkedin.com/company/xinetee/posts/?feedView=all"
                     target="_blank"
@@ -198,7 +204,7 @@ const About = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <GlassCard className="flex flex-col h-full">
-              <h3 className="text-xl font-medium mb-4">Privacy by Design</h3>
+              <h3 className="text-xl font-semibold mb-4">Privacy by Design</h3>
               <p className="text-foreground/70">
                 We believe privacy shouldn't be an afterthought. Every feature, product decision, and line of code 
                 is evaluated through the lens of user privacy to ensure we're always protecting your data.
@@ -206,7 +212,7 @@ const About = () => {
             </GlassCard>
             
             <GlassCard className="flex flex-col h-full">
-              <h3 className="text-xl font-medium mb-4">User Sovereignty</h3>
+              <h3 className="text-xl font-semibold mb-4">User Sovereignty</h3>
               <p className="text-foreground/70">
                 Your data belongs to you, not us. We build technology that empowers users to maintain control 
                 over their information without compromising on convenience or features.
@@ -214,7 +220,7 @@ const About = () => {
             </GlassCard>
             
             <GlassCard className="flex flex-col h-full">
-              <h3 className="text-xl font-medium mb-4">Radical Transparency</h3>
+              <h3 className="text-xl font-semibold mb-4">Radical Transparency</h3>
               <p className="text-foreground/70">
                 We operate with complete openness about our technology, business practices, and roadmap. Our code is 
                 open-source, our security is independently audited, and our communication is always honest.
@@ -222,7 +228,7 @@ const About = () => {
             </GlassCard>
             
             <GlassCard className="flex flex-col h-full">
-              <h3 className="text-xl font-medium mb-4">Continuous Innovation</h3>
+              <h3 className="text-xl font-semibold mb-4">Continuous Innovation</h3>
               <p className="text-foreground/70">
                 The status quo is never good enough. We constantly push the boundaries of what's possible 
                 in data storage, security, and user experience to stay ahead of threats and user needs.
@@ -235,7 +241,7 @@ const About = () => {
       {/* CTA */}
       <AnimatedSection className="py-20 px-4 bg-gradient-to-b from-background/95 to-background">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl mb-6 font-medium tracking-tight">
+          <h2 className="text-3xl md:text-4xl mb-6 font-semibold tracking-tight">
             Join Us on Our Mission
           </h2>
           <p className="text-xl text-foreground/70 mb-10">

@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -6,6 +5,7 @@ import AnimatedSection from '@/components/AnimatedSection';
 import SectionHeading from '@/components/SectionHeading';
 import GlassCard from '@/components/GlassCard';
 import Button from '@/components/Button';
+import MapSection from '@/components/MapSection';
 import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
@@ -50,7 +50,7 @@ const Contact = () => {
       <AnimatedSection className="pt-32 pb-20 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-radial from-primary/20 to-transparent opacity-30"></div>
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h1 className="text-4xl md:text-6xl mb-6 font-light tracking-tight">
+          <h1 className="text-4xl md:text-6xl mb-6 font-semibold tracking-tight">
             Get in <span className="text-primary">Touch</span>
           </h1>
           <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
@@ -65,7 +65,7 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <GlassCard className="p-8">
-              <h2 className="text-2xl font-light mb-6">Send Us a Message</h2>
+              <h2 className="text-2xl font-semibold mb-6">Send Us a Message</h2>
               <form onSubmit={handleSubmit}>
                 <div className="mb-6">
                   <label htmlFor="name" className="block text-sm font-medium text-foreground/80 mb-2">
@@ -141,21 +141,21 @@ const Contact = () => {
             
             {/* Contact Info */}
             <div>
-              <h2 className="text-2xl font-light mb-6">Contact Information</h2>
+              <h2 className="text-2xl font-semibold mb-6">Contact Information</h2>
               
               <div className="space-y-8">
                 <GlassCard className="p-6">
-                  <h3 className="text-lg font-medium mb-2">Headquarters</h3>
+                  <h3 className="text-lg font-semibold mb-2">Headquarters</h3>
                   <p className="text-foreground/70">
                     1234 Innovation Way<br />
                     Tech District<br />
-                    San Francisco, CA 94107<br />
-                    United States
+                    Pune, Maharashtra<br />
+                    India
                   </p>
                 </GlassCard>
                 
                 <GlassCard className="p-6">
-                  <h3 className="text-lg font-medium mb-2">Customer Support</h3>
+                  <h3 className="text-lg font-semibold mb-2">Customer Support</h3>
                   <p className="text-foreground/70 mb-2">
                     For assistance with your account or our services
                   </p>
@@ -170,7 +170,7 @@ const Contact = () => {
                 </GlassCard>
                 
                 <GlassCard className="p-6">
-                  <h3 className="text-lg font-medium mb-2">Business Inquiries</h3>
+                  <h3 className="text-lg font-semibold mb-2">Business Inquiries</h3>
                   <p className="text-foreground/70 mb-2">
                     For partnerships, press, and business opportunities
                   </p>
@@ -181,12 +181,12 @@ const Contact = () => {
                 </GlassCard>
                 
                 <GlassCard className="p-6">
-                  <h3 className="text-lg font-medium mb-2">Hours of Operation</h3>
+                  <h3 className="text-lg font-semibold mb-2">Hours of Operation</h3>
                   <p className="text-foreground/70 mb-1">
                     <span className="text-primary">Customer Support:</span> 24/7
                   </p>
                   <p className="text-foreground/70">
-                    <span className="text-primary">Business Office:</span> Monday-Friday, 9am-6pm PST
+                    <span className="text-primary">Business Office:</span> Monday-Friday, 9am-6pm IST
                   </p>
                 </GlassCard>
               </div>
@@ -198,12 +198,11 @@ const Contact = () => {
       {/* Map Section */}
       <AnimatedSection className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <GlassCard className="p-0 overflow-hidden h-80">
-            {/* In a real app, you would embed a Google Map or similar here */}
-            <div className="w-full h-full bg-card/50 flex items-center justify-center">
-              <p className="text-foreground/70">Interactive Map Would Be Embedded Here</p>
-            </div>
-          </GlassCard>
+          <SectionHeading
+            title="Our Location"
+            subtitle="Visit us at our headquarters in Pune, Maharashtra"
+          />
+          <MapSection />
         </div>
       </AnimatedSection>
       
@@ -217,7 +216,7 @@ const Contact = () => {
           
           <div className="space-y-6">
             <GlassCard>
-              <h3 className="text-xl font-medium mb-2">What's your typical response time?</h3>
+              <h3 className="text-xl font-semibold mb-2">What's your typical response time?</h3>
               <p className="text-foreground/70">
                 For general inquiries, we typically respond within 24 hours. For technical support issues, 
                 our team aims to respond within 4 hours during business hours.
@@ -225,14 +224,14 @@ const Contact = () => {
             </GlassCard>
             
             <GlassCard>
-              <h3 className="text-xl font-medium mb-2">Do you offer phone support?</h3>
+              <h3 className="text-xl font-semibold mb-2">Do you offer phone support?</h3>
               <p className="text-foreground/70">
                 Yes, phone support is available for all paid plans. Free users have access to email and chat support.
               </p>
             </GlassCard>
             
             <GlassCard>
-              <h3 className="text-xl font-medium mb-2">I have a feature request. Where should I send it?</h3>
+              <h3 className="text-xl font-semibold mb-2">I have a feature request. Where should I send it?</h3>
               <p className="text-foreground/70">
                 We love hearing your ideas! Please submit feature requests through our support portal or by 
                 emailing feedback@xinetee.com.

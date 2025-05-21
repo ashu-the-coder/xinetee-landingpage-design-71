@@ -20,7 +20,7 @@ const SectionHeading = ({
       centered && 'text-center',
       className
     )}>
-      <h2 className="text-3xl md:text-4xl lg:text-5xl mb-4 font-medium tracking-tight">
+      <h2 className="text-3xl md:text-4xl lg:text-5xl mb-4 font-semibold tracking-tight">
         {title}
       </h2>
       {subtitle && (
