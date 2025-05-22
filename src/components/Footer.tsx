@@ -15,7 +15,7 @@ const Footer = () => {
                 alt="Xinetee Logo" 
                 className="h-10 w-10 mr-2"
               />
-              <span className="font-medium text-xl">Xinetee</span>
+              <span className="font-bold text-xl">XINETEE</span>
             </div>
             <p className="text-sm mb-6 text-foreground/70">
               Secure, decentralized storage powered by blockchain technology. Your data, truly yours.
@@ -88,7 +88,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-white/5 pt-8 text-center text-sm text-foreground/60">
-          <p>&copy; {currentYear} Xinetee. All rights reserved.</p>
+          <p>&copy; {currentYear} XINETEE. All rights reserved.</p>
           <div className="flex items-center justify-center mt-4">
             <Cloud size={16} className="mr-2" />
             <p>Decentralized Storage Powered By Blockchain</p>

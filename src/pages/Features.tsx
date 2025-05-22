@@ -15,7 +15,7 @@ const Features = () => {
       <AnimatedSection className="pt-32 pb-20 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-radial from-primary/20 to-transparent opacity-30"></div>
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h1 className="text-4xl md:text-6xl mb-6 font-light tracking-tight">
+          <h1 className="text-4xl md:text-6xl mb-6 font-bold tracking-tight">
             Powerful <span className="text-primary">Features</span>
           </h1>
           <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
@@ -29,7 +29,7 @@ const Features = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-24">
             <div>
-              <h2 className="text-3xl font-light mb-6">Advanced Encryption</h2>
+              <h2 className="text-3xl font-bold mb-6">Advanced Encryption</h2>
               <p className="text-foreground/80 mb-6">
                 Xinetee employs military-grade AES-256 encryption to secure your data before it leaves your device. 
                 Only you hold the encryption keys, ensuring that not even Xinetee staff can access your sensitive information.
@@ -144,7 +144,7 @@ const Features = () => {
               </div>
             </GlassCard>
             <div className="md:order-2 lg:order-2">
-              <h2 className="text-3xl font-light mb-6">Total Data Ownership</h2>
+              <h2 className="text-3xl font-bold mb-6">Total Data Ownership</h2>
               <p className="text-foreground/80 mb-6">
                 Xinetee was built on the principle that your data belongs only to you. We provide the infrastructure, 
                 but you maintain complete ownership and control of your information at all times.
@@ -209,7 +209,7 @@ const Features = () => {
               }
             ].map((feature, i) => (
               <GlassCard key={i} className="flex flex-col h-full">
-                <h3 className="text-xl font-medium mb-4">{feature.title}</h3>
+                <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
                 <p className="text-foreground/70">{feature.description}</p>
               </GlassCard>
             ))}
@@ -220,7 +220,7 @@ const Features = () => {
       {/* CTA */}
       <AnimatedSection className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl mb-6 font-light tracking-tight">
+          <h2 className="text-3xl md:text-4xl mb-6 font-bold tracking-tight">
             Ready to experience these features?
           </h2>
           <p className="text-xl text-foreground/70 mb-10">

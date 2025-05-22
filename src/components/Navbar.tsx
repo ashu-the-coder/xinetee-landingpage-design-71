@@ -43,7 +43,7 @@ const Navbar = () => {
               alt="Xinetee Logo" 
               className="h-10 w-10 mr-2"
             />
-            <span className="font-medium text-xl">Xinetee</span>
+            <span className="font-bold text-xl">XINETEE</span>
           </div>
           
           {/* Desktop Navigation */}

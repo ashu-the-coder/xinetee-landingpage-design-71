@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -504,7 +503,7 @@ const Blog = () => {
       <AnimatedSection className="pt-32 pb-20 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-radial from-primary/20 to-transparent opacity-30"></div>
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h1 className="text-4xl md:text-6xl mb-6 font-light tracking-tight">
+          <h1 className="text-4xl md:text-6xl mb-6 font-bold tracking-tight">
             The <span className="text-primary">Xinetee</span> Blog
           </h1>
           <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
@@ -568,7 +567,7 @@ const Blog = () => {
                       {blogPosts[0].readTime}
                     </span>
                   </div>
-                  <h2 className="text-2xl md:text-3xl font-light mb-4 group-hover:text-primary transition-colors">
+                  <h2 className="text-2xl md:text-3xl font-bold mb-4 group-hover:text-primary transition-colors">
                     {blogPosts[0].title}
                   </h2>
                   <p className="text-foreground/70 mb-6">
@@ -643,7 +642,7 @@ const Blog = () => {
       {/* Newsletter */}
       <AnimatedSection className="py-16 px-4 bg-gradient-to-b from-background to-background/95">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl mb-6 font-light tracking-tight">
+          <h2 className="text-2xl md:text-3xl mb-6 font-bold tracking-tight">
             Stay Updated with Our Newsletter
           </h2>
           <p className="text-foreground/70 mb-8 max-w-xl mx-auto">

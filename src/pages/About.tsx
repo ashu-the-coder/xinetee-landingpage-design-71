@@ -17,7 +17,7 @@ const About = () => {
       <AnimatedSection className="pt-32 pb-20 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-radial from-primary/20 to-transparent opacity-30"></div>
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h1 className="text-4xl md:text-6xl mb-6 font-semibold tracking-tight">
+          <h1 className="text-4xl md:text-6xl mb-6 font-bold tracking-tight">
             Our <span className="text-primary">Story</span>
           </h1>
           <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
@@ -31,7 +31,7 @@ const About = () => {
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-24">
             <div>
-              <h2 className="text-3xl font-semibold mb-6">How It All Began</h2>
+              <h2 className="text-3xl font-bold mb-6">How It All Began</h2>
               <p className="text-foreground/80 mb-4">
                 Xinetee was founded in 2020 by a team of cryptographers, blockchain engineers, and privacy advocates 
                 who shared a vision: to create storage infrastructure that users could truly own.
@@ -55,7 +55,7 @@ const About = () => {
           <VideoSection 
             title="Our Mission"
             description="We believe that data storage should be more than just a service—it should be a right. A right to privacy, security, and true ownership of your digital information. Our mission is to build technology that puts users first, eliminates central points of failure, and makes unprecedented security accessible to everyone."
-            videoSrc="https://xinetee.network/videos/demo.mp4"
+            youtubeVideoId="dQw4w9WgXcQ"
           />
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-24 mt-12">
@@ -67,7 +67,7 @@ const About = () => {
               />
             </GlassCard>
             <div className="md:order-2 lg:order-2">
-              <h2 className="text-3xl font-semibold mb-6">Our Vision</h2>
+              <h2 className="text-3xl font-bold mb-6">Our Vision</h2>
               <p className="text-foreground/80 mb-4">
                 We envision a world where individuals and organizations no longer have to choose between convenience and control.
               </p>
@@ -157,7 +157,7 @@ const About = () => {
                     className="w-full h-full object-cover" 
                   />
                 </div>
-                <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
+                <h3 className="text-xl font-bold mb-1">{member.name}</h3>
                 <p className="text-primary text-sm mb-4">{member.role}</p>
                 <p className="text-foreground/70 mb-6">{member.bio}</p>
                 
