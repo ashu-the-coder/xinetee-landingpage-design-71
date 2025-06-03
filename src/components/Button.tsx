@@ -22,9 +22,9 @@ const Button = ({
         size === 'sm' && 'text-sm py-2 px-4',
         size === 'md' && 'text-base py-3 px-6',
         size === 'lg' && 'text-lg py-4 px-8',
-        variant === 'primary' && 'bg-gradient-to-b from-primary/60 to-primary/40', // Reduced transparency
-        variant === 'secondary' && 'bg-gradient-to-b from-secondary/50 to-secondary/30', // Brighter
-        variant === 'outline' && 'bg-transparent border border-primary/60 hover:bg-primary/10', // Brighter border
+        variant === 'primary' && 'bg-gradient-to-b from-primary/70 to-primary/50',
+        variant === 'secondary' && 'bg-gradient-to-b from-secondary/60 to-secondary/40',
+        variant === 'outline' && 'bg-transparent border border-primary/70 hover:bg-primary/15',
         className
       )}
       style={{
