@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import AnimatedSection from '@/components/AnimatedSection';
 import Button from '@/components/Button';
@@ -56,8 +55,8 @@ const Index = () => {
         <Globe3D />
         
         <div className="max-w-5xl mx-auto text-center relative z-10">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl mb-6 font-light tracking-tight">
-            Secure, Decentralized <span className="text-primary">Storage</span> On The Blockchain
+          <h1 className="text-4xl md:text-6xl lg:text-7xl mb-6 font-bold tracking-tight">
+            Secure, Decentralized <span className="text-purple-400">Storage</span> On The Blockchain
           </h1>
           <p className="text-xl text-foreground/70 max-w-2xl mx-auto mb-12">
             Experience next-generation file storage with unbreakable security, powered by blockchain technology.
@@ -209,7 +208,7 @@ const Index = () => {
               <iframe 
                 width="100%" 
                 height="100%" 
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                src="https://www.youtube.com/embed/ErEjQUbn4r4" 
                 title="Our Mission" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowFullScreen

@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
@@ -59,7 +60,7 @@
     background: linear-gradient(135deg, hsl(267 35% 7%), hsl(267 35% 10%));
   }
   
-  /* Enhanced purple glow effect for the background with a vivid mesh gradient */
+  /* Enhanced purple, dark blue, and pink glow effect for the background */
   body::before {
     content: '';
     position: fixed;
@@ -68,13 +69,14 @@
     width: 100%;
     height: 100%;
     background: 
-      radial-gradient(circle at 20% 20%, rgba(170, 90, 250, 0.45) 0%, transparent 50%),
-      radial-gradient(circle at 80% 80%, rgba(150, 87, 224, 0.4) 0%, transparent 60%),
-      radial-gradient(circle at 50% 50%, rgba(220, 130, 255, 0.3) 0%, transparent 70%),
-      radial-gradient(ellipse at bottom, rgba(190, 100, 255, 0.45) 0%, transparent 70%),
-      radial-gradient(ellipse at top, rgba(240, 140, 255, 0.35) 0%, transparent 70%),
-      radial-gradient(ellipse at left, rgba(200, 90, 255, 0.3) 0%, transparent 60%),
-      radial-gradient(ellipse at right, rgba(255, 130, 255, 0.3) 0%, transparent 60%);
+      radial-gradient(circle at 15% 25%, rgba(138, 43, 226, 0.5) 0%, transparent 40%),
+      radial-gradient(circle at 85% 75%, rgba(255, 20, 147, 0.4) 0%, transparent 50%),
+      radial-gradient(circle at 50% 10%, rgba(30, 30, 120, 0.6) 0%, transparent 60%),
+      radial-gradient(circle at 20% 80%, rgba(186, 85, 211, 0.45) 0%, transparent 55%),
+      radial-gradient(circle at 80% 20%, rgba(72, 61, 139, 0.5) 0%, transparent 50%),
+      radial-gradient(ellipse at bottom left, rgba(147, 0, 211, 0.4) 0%, transparent 70%),
+      radial-gradient(ellipse at top right, rgba(25, 25, 112, 0.45) 0%, transparent 65%),
+      radial-gradient(ellipse at center, rgba(199, 21, 133, 0.3) 0%, transparent 80%);
     pointer-events: none;
     z-index: -1;
   }
@@ -138,8 +140,19 @@
            transition-transform duration-300 ease-out;
   }
   
-  /* Enhanced hover animation for glass cards - BRIGHTER CARDS with MORE GLOW */
-  .glass-card:hover {
+  /* Remove hover animation for testimonial cards specifically */
+  .testimonial-card {
+    @apply transition-all duration-300;
+  }
+  
+  .testimonial-card:hover {
+    box-shadow: 0 0 30px rgba(170, 110, 240, 0.6);
+    @apply border-purple-500/40;
+    /* Remove scale transform */
+  }
+
+  /* Enhanced hover animation for OTHER glass cards - BRIGHTER CARDS with MORE GLOW */
+  .glass-card:hover:not(.testimonial-card) {
     @apply transform scale-105 shadow-xl border-white/20;
     box-shadow: 0 0 30px rgba(190, 130, 255, 0.6);
     background-color: rgba(55, 40, 85, 0.7);  /* Brighter background for cards */
@@ -175,16 +188,6 @@
   
   .animate-on-scroll.reveal {
     @apply opacity-100 translate-y-0;
-  }
-  
-  /* Testimonial card with enhanced glow effect */
-  .testimonial-card {
-    @apply transition-all duration-300;
-  }
-  
-  .testimonial-card:hover {
-    box-shadow: 0 0 30px rgba(170, 110, 240, 0.6);
-    @apply border-purple-500/40;
   }
   
   /* Globe container styles - ADJUSTED POSITIONING */
