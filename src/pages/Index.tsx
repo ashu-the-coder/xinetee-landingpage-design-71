@@ -56,16 +56,16 @@ const Index = () => {
         <Globe3D />
         
         <div className="max-w-5xl mx-auto text-center relative z-10">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl mb-6 font-bold tracking-tight text-white">
-            Secure. Decentralized. <span className="text-purple-400">Storage</span>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl mb-6 font-light tracking-tight">
+            Secure, Decentralized <span className="text-primary">Storage</span> On The Blockchain
           </h1>
           <p className="text-xl text-foreground/70 max-w-2xl mx-auto mb-12">
             Experience next-generation file storage with unbreakable security, powered by blockchain technology.
             Your data, truly yours—forever.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 relative z-10">
-            <Button size="lg" className="bg-gradient-to-b from-primary/70 to-primary/50">Get Started</Button>
-            <Button variant="outline" size="lg" className="bg-transparent border border-primary/70 hover:bg-primary/15">Learn More</Button>
+            <Button size="lg">Get Started</Button>
+            <Button variant="outline" size="lg">Learn More</Button>
           </div>
         </div>
         
