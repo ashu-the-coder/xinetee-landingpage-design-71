@@ -33,13 +33,11 @@ const About = () => {
             <div>
               <h2 className="text-3xl font-bold mb-6">How It All Began</h2>
               <p className="text-foreground/80 mb-4">
-                Xinetee was founded in 2020 by a team of cryptographers, blockchain engineers, and privacy advocates 
-                who shared a vision: to create storage infrastructure that users could truly own.
+                We began with a clear intention, to build something that truly matters. What started as curiosity in VR and AR quickly evolved into a deeper exploration of blockchain and Web3, where we saw the power to drive real change.
               </p>
               <p className="text-foreground/80">
-                After witnessing numerous data breaches and privacy violations from traditional cloud providers, 
-                our founders decided to build a solution that would leverage the power of blockchain and 
-                decentralized technologies to create a fundamentally different approach to data storage.
+                Seeing the problems and lack of transparency in systems like the textile supply chain, we knew there had to be a better way. 
+                <br>That vision became a platform, seamlessly blending blockchain, e-commerce, and developer tools to tackle real-world problems and put control back into the hands of users like you.</br>
               </p>
             </div>
             <GlassCard className="p-6 md:p-10 h-80 flex items-center justify-center bg-card/20">
@@ -54,7 +52,7 @@ const About = () => {
           {/* Mission Video Section */}
           <VideoSection 
             title="Our Mission"
-            description="We believe that data storage should be more than just a service—it should be a right. A right to privacy, security, and true ownership of your digital information. Our mission is to build technology that puts users first, eliminates central points of failure, and makes unprecedented security accessible to everyone."
+            description="Data storage, in our opinion, should be a right rather than merely a service. a right to privacy, security, and actual control over your online environment.Our goal is to create technology that prioritizes users, removes single points of failure, and opens up a new level of security that is available to everyone."
             youtubeVideoId="dQw4w9WgXcQ"
           />
           
@@ -69,11 +67,10 @@ const About = () => {
             <div className="md:order-2 lg:order-2">
               <h2 className="text-3xl font-bold mb-6">Our Vision</h2>
               <p className="text-foreground/80 mb-4">
-                We envision a world where individuals and organizations no longer have to choose between convenience and control.
+               In our ideal future, neither people nor organizations should have to decide between control and convenience.
               </p>
               <p className="text-foreground/80">
-                Through innovative technology and a commitment to user sovereignty, we're creating a future where data is 
-                always accessible, never compromised, and truly owned by those who create it.
+                With the help of cutting-edge technology and a strong dedication to user sovereignty, we are creating a future in which data is always available, unaltered, and fully owned by its creators.
               </p>
             </div>
           </div>
@@ -82,13 +79,10 @@ const About = () => {
             <div>
               <h2 className="text-3xl font-semibold mb-6">The Technology</h2>
               <p className="text-foreground/80 mb-4">
-                Xinetee combines three powerful technologies—virtual machines for secure computation, IPFS for distributed 
-                storage, and blockchain for verification—into a seamless platform that redefines what's possible in data storage.
+                By fusing three revolutionary technologies—blockchain for unchangeable verification, IPFS for distributed storage, and secure virtual machines for computation—our platform reimagines the future of data ownership.
               </p>
               <p className="text-foreground/80">
-                Our engineering team continues to push the boundaries of what's possible, with research into 
-                quantum-resistant encryption, scalable consensus mechanisms, and innovative approaches to 
-                decentralized identity that will shape the future of our platform.
+                Our engineering team is laying the groundwork for a more secure, independent digital future by developing decentralized identity, scalable consensus protocols, and quantum-resistant encryption with an innovative mindset. In addition to infrastructure, we also handle data and advanced analytics, giving users insights they can act upon while retaining complete control and openness.
               </p>
             </div>
             <GlassCard className="p-6 md:p-10 h-80 flex items-center justify-center bg-card/20">
