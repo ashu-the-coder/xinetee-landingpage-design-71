@@ -110,37 +110,37 @@ const About = () => {
                 name: "ASHUTOSH AIANULE",
                 role: "Founder & CEO",
                 bio: "Visionary leader with good of experience in blockchain and decentralized systems",
-                image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=987&auto=format&fit=crop"
+                image: "https://res.cloudinary.com/dagr9t409/image/upload/v1749247064/IEEE_eyoivo.jpg"
               },
               {
-                name: "Michael Chen",
-                role: "Chief Technology Officer",
-                bio: "Blockchain architect who previously led distributed systems development at major tech companies.",
-                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=987&auto=format&fit=crop"
+                name: "Swipnil Dhiware",
+                role: "Chief Of Research & Development",
+                bio: "Innovative technologist with a passion for building secure, user-centric applications.",
+                image: "https://res.cloudinary.com/dagr9t409/image/upload/v1749247306/1747456776180_laoyaw.jpg"
               },
               {
-                name: "Sophia Nguyen",
-                role: "Head of Security",
-                bio: "Security researcher with expertise in zero-knowledge proofs and privacy-preserving computation.",
-                image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1470&auto=format&fit=crop"
+                name: "Sanket",
+                role: "Head of Marketing",
+                bio: "Marketing strategist with a focus on community building and user engagement in tech.",
+                image: "https://res.cloudinary.com/dagr9t409/image/upload/v1749247432/Sanket_pb3bbm.jpg"
               },
               {
-                name: "David Okafor",
-                role: "Lead Engineer",
-                bio: "Full-stack engineer specializing in decentralized applications and peer-to-peer networks.",
-                image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=987&auto=format&fit=crop"
+                name: "Aditya Akolkar",
+                role: "UX Developer",
+                bio: "UX specialist focused on making complex technology accessible through intuitive interfaces.",
+                image: "https://res.cloudinary.com/dagr9t409/image/upload/v1749247538/Aditya_pto3tj.jpg"
               },
               {
-                name: "Aisha Patel",
+                name: "Shruti Lokhande",
                 role: "Product Director",
                 bio: "UX specialist focused on making complex technology accessible through intuitive interfaces.",
-                image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1522&auto=format&fit=crop"
+                image: "https://res.cloudinary.com/dagr9t409/image/upload/v1749247704/Shruti_rl5tow.jpg"
               },
               {
-                name: "James Wilson",
-                role: "Business Development",
-                bio: "Strategic partnership expert with background in enterprise technology and privacy advocacy.",
-                image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1470&auto=format&fit=crop"
+                name: "",
+                role: "",
+                bio: "",
+                image: ""
               }
             ].map((member, i) => (
               <GlassCard key={i} className="flex flex-col h-full">
