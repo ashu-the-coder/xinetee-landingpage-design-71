@@ -107,9 +107,9 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                name: "Dr. Elena Rodriguez",
+                name: "ASHUTOSH AIANULE",
                 role: "Founder & CEO",
-                bio: "Former cryptography professor with 15+ years of research in secure systems and blockchain technologies.",
+                bio: "Visionary leader with good of experience in blockchain and decentralized systems",
                 image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=987&auto=format&fit=crop"
               },
               {
