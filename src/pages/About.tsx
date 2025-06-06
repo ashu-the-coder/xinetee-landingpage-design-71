@@ -79,7 +79,7 @@ const About = () => {
             <div>
               <h2 className="text-3xl font-semibold mb-6">The Technology</h2>
               <p className="text-foreground/80 mb-4">
-                By fusing three revolutionary technologies—blockchain for unchangeable verification, IPFS for distributed storage, and secure virtual machines for computation—our platform reimagines the future of data ownership.
+                By fusing three revolutionary technologies blockchain for unchangeable verification, IPFS for distributed storage, and secure virtual machines for computation our platform reimagines the future of data ownership.
               </p>
               <p className="text-foreground/80">
                 Our engineering team is laying the groundwork for a more secure, independent digital future by developing decentralized identity, scalable consensus protocols, and quantum-resistant encryption with an innovative mindset. In addition to infrastructure, we also handle data and advanced analytics, giving users insights they can act upon while retaining complete control and openness.
