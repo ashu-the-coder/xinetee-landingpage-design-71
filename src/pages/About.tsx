@@ -37,7 +37,7 @@ const About = () => {
               </p>
               <p className="text-foreground/80">
                 Seeing the problems and lack of transparency in systems like the textile supply chain, we knew there had to be a better way. 
-                <br>That vision became a platform, seamlessly blending blockchain, e-commerce, and developer tools to tackle real-world problems and put control back into the hands of users like you.</br>
+                <br />That vision became a platform, seamlessly blending blockchain, e-commerce, and developer tools to tackle real-world problems and put control back into the hands of users like you.
               </p>
             </div>
             <GlassCard className="p-6 md:p-10 h-80 flex items-center justify-center bg-card/20">
