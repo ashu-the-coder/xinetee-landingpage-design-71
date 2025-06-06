@@ -132,8 +132,8 @@ const About = () => {
               },
               {
                 name: "Shruti Lokhande",
-                role: "Product Director",
-                bio: "UX specialist focused on making complex technology accessible through intuitive interfaces.",
+                role: "Media",
+                bio: "Media specialist with a focus on storytelling and brand identity.",
                 image: "https://res.cloudinary.com/dagr9t409/image/upload/v1749247704/Shruti_rl5tow.jpg"
               },
               {
