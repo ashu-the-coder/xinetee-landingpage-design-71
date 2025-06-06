@@ -110,7 +110,7 @@ const About = () => {
                 name: "ASHUTOSH AIANULE",
                 role: "Founder & CEO",
                 bio: "Visionary leader with good of experience in blockchain and decentralized systems",
-                image: "https://res.cloudinary.com/dagr9t409/image/upload/v1749247064/IEEE_eyoivo.jpg"
+                image: "https://res.cloudinary.com/dagr9t409/image/upload/IEEE_eyoivo.jpg"
               },
               {
                 name: "Swipnil Dhiware",
@@ -137,10 +137,10 @@ const About = () => {
                 image: "https://res.cloudinary.com/dagr9t409/image/upload/v1749247704/Shruti_rl5tow.jpg"
               },
               {
-                name: "",
-                role: "",
+                name: "Hiring",
+                role: "CTO",
                 bio: "",
-                image: ""
+                image: "https://res.cloudinary.com/dagr9t409/image/upload/CTO_Hiring_rjt2xi.jpg"
               }
             ].map((member, i) => (
               <GlassCard key={i} className="flex flex-col h-full">
