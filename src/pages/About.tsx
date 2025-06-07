@@ -135,7 +135,7 @@ const About = () => {
                 name: "",
                 role: "",
                 bio: "",
-                image: ""
+                image: "https://res.cloudinary.com/dkrvyhq2y/image/upload/v1749301691/h7qhor0djeylw10fk78f.png"
               }
             ].map((member, i) => (
               <GlassCard key={i} className="flex flex-col h-full">
