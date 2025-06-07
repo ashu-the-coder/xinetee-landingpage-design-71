@@ -108,31 +108,26 @@ const About = () => {
             {[
               {
                 name: "ASHUTOSH AIANULE",
-                role: "Founder & CEO",
                 bio: "Visionary leader with good of experience in blockchain and decentralized systems",
                 image: "https://res.cloudinary.com/dagr9t409/image/upload/IEEE_eyoivo.jpg"
               },
               {
                 name: "Swipnil Dhiware",
-                role: "Chief Of Research & Development",
                 bio: "Innovative technologist with a passion for building secure, user-centric applications.",
                 image: "https://res.cloudinary.com/dagr9t409/image/upload/v1749247306/1747456776180_laoyaw.jpg"
               },
               {
                 name: "Sanket",
-                role: "Head of Marketing",
                 bio: "Marketing strategist with a focus on community building and user engagement in tech.",
                 image: "https://res.cloudinary.com/dagr9t409/image/upload/v1749247432/Sanket_pb3bbm.jpg"
               },
               {
                 name: "Aditya Akolkar",
-                role: "UX Developer",
                 bio: "UX specialist focused on making complex technology accessible through intuitive interfaces.",
                 image: "https://res.cloudinary.com/dagr9t409/image/upload/v1749247538/Aditya_pto3tj.jpg"
               },
               {
                 name: "Shruti Lokhande",
-                role: "Media",
                 bio: "Media specialist with a focus on storytelling and brand identity.",
                 image: "https://res.cloudinary.com/dagr9t409/image/upload/v1749247704/Shruti_rl5tow.jpg"
               },
