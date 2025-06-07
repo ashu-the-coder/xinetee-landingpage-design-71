@@ -176,7 +176,7 @@ const Contact = () => {
                   </p>
                   <p className="mb-1">
                     <span className="text-primary">Email:</span>{" "}
-                    <a href="mailto:business@xinetee.com" className="text-foreground/80 hover:text-foreground">business@xinetee.com</a>
+                    <a href="mailto:business@xinetee.com" className="text-foreground/80 hover:text-foreground">xinetees@gmail.com</a>
                   </p>
                 </GlassCard>
                 
