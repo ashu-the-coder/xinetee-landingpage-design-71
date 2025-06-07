@@ -132,10 +132,10 @@ const About = () => {
                 image: "https://res.cloudinary.com/dagr9t409/image/upload/v1749247704/Shruti_rl5tow.jpg"
               },
               {
-                name: "Hiring",
-                role: "CTO",
-                bio: "Can Contact us if you are interested in the position",
-                image: "https://res.cloudinary.com/dagr9t409/image/upload/CTO_Hiring_rjt2xi.jpg"
+                name: "",
+                role: "",
+                bio: "",
+                image: ""
               }
             ].map((member, i) => (
               <GlassCard key={i} className="flex flex-col h-full">
